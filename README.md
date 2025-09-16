@@ -111,6 +111,8 @@ uv run xtractor-cli ./samples/asset-register.pdf ./schema.json --output result.j
 
 ## Environment Configuration
 
+Start by copying `.env.example` to `.env` and populate the secrets required for your deployment.
+
 | Variable | Default | Purpose |
 |----------|---------|---------|
 | `DX_MM_MODEL` | `gpt-4o-mini` | Multimodal model selection |
@@ -171,3 +173,14 @@ Tests cover schema validation, symbol routing, prompt merging, and end-to-end pi
 - **OpenAI integration** requires installing `langchain-openai` and setting API key
 - **Symbol extraction** currently uses heuristic methods; real symbol tooling can be integrated by extending `symbol_agent.py`
 - **Graceful degradation** when LLM providers are unavailable, with heuristic fallbacks and warning generation
+
+## Containerization
+
+Build and run the FastAPI service using the provided `Dockerfile`:
+
+```bash
+docker build -t simplify-xtractor .
+docker run --rm -p 8000:8000 --env-file .env simplify-xtractor
+```
+
+The container image installs dependencies via `uv` and serves the API using `uvicorn` on port 8000.

@@ -1,0 +1,239 @@
+{
+  "status": "ok",
+  "concise_summary": "This two-page document presents detailed engineering drawings for the lighting and socket layout of a Bucket Wheel Stacker Reclaimer. Page 1 illustrates the \"ELECTRICAL CABIN,\" showcasing its external views and a detailed internal layout of electrical components, including various circuits and push-buttons. Page 2 focuses on the \"ROTATION/MAST ZONE\" of the reclaimer, presenting top-down and detailed side views of its electrical installations. Both pages are part of the TIMOR-1 COAL FIRED STEAM POWER PLANT (2 x 50 MW) project for client PT. PLN (PERSERO). The drawings include an equipment legend defining symbols for different types of lights, push-buttons, and maintenance plugs, and indicate that all dimensions are in millimeters.",
+  "result": {
+    "key": "asset-register-v1",
+    "rows": [
+      {
+        "UNIQUE KKS": "ARV1-000001",
+        "TAG/KKS NO": "10EAF10AF001-PB-10",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "Lighting Push-Button, Electrical Cabin",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000002",
+        "TAG/KKS NO": "10EAF10AF001-EL-100",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light, Electrical Cabin Circuit 7",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000003",
+        "TAG/KKS NO": "10EAF10AF001-EL-103",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light, Electrical Cabin Circuit 7",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000004",
+        "TAG/KKS NO": "10EAF10AF001-PB-11",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "Lighting Push-Button, Electrical Cabin",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000005",
+        "TAG/KKS NO": "10EAF10AF001-EL-107",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light, Electrical Cabin Circuit 7",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000006",
+        "TAG/KKS NO": "10EAF10AF001-EL-108",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light, Electrical Cabin Circuit 7",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000007",
+        "TAG/KKS NO": "10EAF10AF001-EL-104",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light, Electrical Cabin Circuit 7",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000008",
+        "TAG/KKS NO": "10EAF10AF001-EL-101",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light, Electrical Cabin Circuit 7",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000009",
+        "TAG/KKS NO": "10EAF10AF001-EL-102",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light, Electrical Cabin Circuit 8",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000010",
+        "TAG/KKS NO": "10EAF10AF001-EL-106",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light, Electrical Cabin Circuit 7",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000011",
+        "TAG/KKS NO": "10EAF10AF001-EL-105",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light, Electrical Cabin Circuit 7",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000012",
+        "TAG/KKS NO": "10EAF10AF001-EL-109",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light, Electrical Cabin Circuit 7",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000013",
+        "TAG/KKS NO": "10EAF10AF001-PB-12",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "Lighting Push-Button, Electrical Cabin",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000014",
+        "TAG/KKS NO": "10EAF10AF001-XP-00",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light, Rotation/Mast Zone Circuit 1",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000015",
+        "TAG/KKS NO": "10EAF10AF001-PB-03",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "Lighting Push-Button",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000016",
+        "TAG/KKS NO": "10EAF10AF001-EL-61",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light, Rotation/Mast Zone Circuit 1",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000017",
+        "TAG/KKS NO": "10EAF10AF001-EL-64",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light, Rotation/Mast Zone Circuit 1",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000018",
+        "TAG/KKS NO": "10EAF10AF001-EL-59",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light, Rotation/Mast Zone Circuit 1",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000019",
+        "TAG/KKS NO": "10EAF10AF001-EL-58",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light, Rotation/Mast Zone Circuit 1",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000020",
+        "TAG/KKS NO": "10EAF10AF001-EL-68",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000021",
+        "TAG/KKS NO": "10EAF10AF001-EL-69",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      },
+      {
+        "UNIQUE KKS": "ARV1-000022",
+        "TAG/KKS NO": "10EAF10AF001-EL-67",
+        "EQPT MDL NO": null,
+        "CLASS": "Electrical",
+        "PARTS DESCRIPTION": "LED Light",
+        "SIZE": null,
+        "REF DOCUMENT 1": "T1-IK-210-ELE-DWG-01091-AXJJ002"
+      }
+    ]
+  },
+  "symbols": {
+    "used": true,
+    "legend": [
+      {
+        "symbol": "PT",
+        "meaning": "Pressure Transmitter",
+        "pages": [],
+        "bbox": null
+      }
+    ]
+  },
+  "audit": {
+    "graph_run_id": "thread_e5815394",
+    "nodes_path": [
+      "file_understanding",
+      "prompt_builder",
+      "symbol_agent",
+      "prompt_merge",
+      "multimodal_extract",
+      "postprocess"
+    ],
+    "latency_ms": 116279,
+    "timings_ms": {
+      "file_understanding": 33844,
+      "prompt_builder": 0,
+      "symbol_router": 0,
+      "symbol_agent": 0,
+      "prompt_merge": 0,
+      "multimodal_extract": 82435
+    }
+  },
+  "warnings": []
+}
