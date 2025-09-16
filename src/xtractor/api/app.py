@@ -12,8 +12,7 @@ def create_app() -> FastAPI:
     app = FastAPI(title="Document Xtractor", version="1.2.5")
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=settings.cors_allowed_origins or ["*"],
-        allow_credentials=True,
+        allow_origins=["*"],
         allow_methods=["*"],
         allow_headers=["*"],
     )
