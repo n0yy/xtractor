@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from functools import lru_cache
 from pathlib import Path
-from typing import Literal
+from typing import List, Literal
 
 from pydantic import AliasChoices, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -24,6 +24,10 @@ class Settings(BaseSettings):
     enable_symbol_agent: bool = Field(default=True, description="Toggle symbol agent execution")
     temp_dir: Path = Field(default=Path("./.tmp"), description="Workspace for temporary files")
     log_level: str = Field(default="INFO", description="Root log level")
+    cors_allowed_origins: List[str] = Field(
+        default_factory=lambda: ["http://localhost:5173"],
+        description="Allowed origins for CORS. Use ['*'] to allow all.",
+    )
     openai_api_key: str | None = Field(
         default=None,
         validation_alias=AliasChoices("DX_OPENAI_API_KEY", "OPENAI_API_KEY"),

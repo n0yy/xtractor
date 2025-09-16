@@ -47,23 +47,32 @@ def multimodal_extract(state: DXState) -> DXState:
     try:
         model = build_multimodal_model(settings)
         encoded = _load_document(doc_path)
+        example_json = state.get("fewshot_example")
+        human_content: List[Dict[str, Any]] = [
+            {
+                "type": "text",
+                "text": PROMPT_SUFFIX,
+            }
+        ]
+        if example_json:
+            human_content.append(
+                {
+                    "type": "text",
+                    "text": "Example output JSON:\n" + str(example_json),
+                }
+            )
+        human_content.append(
+            {
+                "type": "file",
+                "source_type": "base64",
+                "mime_type": state.get("mime", "application/pdf"),
+                "data": encoded,
+                "filename": doc_path.name,
+            }
+        )
         messages = [
             SystemMessage(content=final_prompt),
-            HumanMessage(
-                content=[
-                    {
-                        "type": "text",
-                        "text": PROMPT_SUFFIX,
-                    },
-                    {
-                        "type": "file",
-                        "source_type": "base64",
-                        "mime_type": state.get("mime", "application/pdf"),
-                        "data": encoded,
-                        "filename": doc_path.name,
-                    },
-                ]
-            ),
+            HumanMessage(content=human_content),
         ]
         response = invoke_json(
             model,

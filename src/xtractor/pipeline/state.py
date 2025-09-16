@@ -63,6 +63,7 @@ class DXState(TypedDict, total=False):
     concise_summary: str
     hints: List[str]
     system_prompt_draft: str
+    fewshot_example: str
     symbol_context: Optional[SymbolContext]
     system_prompt_final: str
     extraction_result: ExtractionResult

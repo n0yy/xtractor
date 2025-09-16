@@ -40,7 +40,7 @@ graph TD
 
 #### 📝 prompt_builder
 - Renders schema definitions into structured system prompt
-- Incorporates document summary and hints
+- Incorporates document summary, hints, and schema-derived example output for few-shot guidance
 - Creates draft prompt for extraction
 
 #### 🔀 symbol_router (Decision Node)
@@ -75,6 +75,7 @@ graph TD
 - **LangGraph pipeline** with file understanding, prompt builder, symbol router/agent, multimodal extraction, and post-processing nodes
 - **Prompt-only multimodal agents** that fall back to heuristic summaries when an LLM provider is not configured
 - **Schema validation & normalization** ensuring responses match user supplied field definitions
+- **Schema-driven few-shot** examples derived from payload values to steer extraction outputs
 - **FastAPI endpoint** `POST /v1/extract` accepting multipart uploads (`file` + JSON `payload`)
 - **CLI runner** for batch extraction that reuses the same pipeline implementation
 - **Audit trail** capturing node timings and graph run identifiers
@@ -113,7 +114,6 @@ uv run xtractor-cli ./samples/asset-register.pdf ./schema.json --output result.j
 | Variable | Default | Purpose |
 |----------|---------|---------|
 | `DX_MM_MODEL` | `gpt-4o-mini` | Multimodal model selection |
-| `DX_MM_PROVIDER` | `openai` | LLM provider (requires `langchain-openai`) |
 | `DX_ENABLE_SYMBOL_AGENT` | `true` | Toggle heuristic symbol agent |
 | `DX_OPENAI_API_KEY` / `OPENAI_API_KEY` | - | OpenAI authentication |
 | `DX_OPENAI_BASE_URL` | - | OpenAI-compatible proxy (e.g., LiteLLM) |
