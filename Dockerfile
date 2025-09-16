@@ -19,6 +19,6 @@ RUN uv pip install --system .
 
 COPY .env.example ./
 
-EXPOSE 8000
+EXPOSE 8808
 
-CMD ["uvicorn", "xtractor.api.app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "xtractor.api.app:app", "--host", "0.0.0.0", "--port", "8808"]

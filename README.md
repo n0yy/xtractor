@@ -180,7 +180,7 @@ Build and run the FastAPI service using the provided `Dockerfile`:
 
 ```bash
 docker build -t simplify-xtractor .
-docker run --rm -p 8000:8000 --env-file .env simplify-xtractor
+docker run --rm -p 8808:8808 --env-file .env simplify-xtractor
 ```
 
-The container image installs dependencies via `uv` and serves the API using `uvicorn` on port 8000.
+The container image installs dependencies via `uv` and serves the API using `uvicorn` on port 8808.
