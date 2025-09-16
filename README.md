@@ -6,6 +6,7 @@ Document Xtractor is a LangGraph-based multi-agent pipeline that processes indus
 ## Pipeline Flow Diagram
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'darkMode': true}}}%%
 graph TD
     A[Request Validation & File Persistence] --> B[file_understanding]
     B --> C[prompt_builder]
@@ -16,14 +17,17 @@ graph TD
     E --> G[multimodal_extract]
     G --> H[postprocess]
     
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#f3e5f5
-    style D fill:#fff3e0
-    style F fill:#f3e5f5
-    style E fill:#f3e5f5
-    style G fill:#e8f5e8
-    style H fill:#fff9c4
+    classDef validation fill:#1e40af,stroke:#3b82f6,stroke-width:2px,color:#fff
+    classDef processing fill:#9333ea,stroke:#a855f7,stroke-width:2px,color:#fff  
+    classDef decision fill:#ea580c,stroke:#f97316,stroke-width:2px,color:#fff
+    classDef extraction fill:#059669,stroke:#10b981,stroke-width:2px,color:#fff
+    classDef postproc fill:#d97706,stroke:#f59e0b,stroke-width:2px,color:#fff
+    
+    class A validation
+    class B,C,F,E processing
+    class D decision
+    class G extraction
+    class H postproc
 ```
 
 ## Node Descriptions
