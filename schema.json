@@ -1,0 +1,15 @@
+{
+  "outputFormat": "json",
+  "schema": {
+    "key": "asset-register-v1",
+    "fields": [
+      { "name": "UNIQUE KKS", "description": "Unique identifier per asset", "value": "ARV1-000123" },
+      { "name": "TAG/KKS NO", "description": "Equipment tag number", "value": "AR-TAG-000123" },
+      { "name": "EQPT MDL NO", "description": "Equipment model number", "value": "EQP-MDL-4500" },
+      { "name": "CLASS", "description": "Classification of the equipment", "value": "Electrical" },
+      { "name": "PARTS DESCRIPTION", "description": "Short description", "value": "Main panel circuit breaker" },
+      { "name": "SIZE", "description": "Dimension or size notes", "value": "400A/415V" },
+      { "name": "REF DOCUMENT 1", "description": "Reference document identifier", "value": "DOC-REF-2024-001" }
+    ]
+  }
+}
