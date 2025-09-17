@@ -1,10 +1,12 @@
 from __future__ import annotations
 
+import json
+
 from functools import lru_cache
 from pathlib import Path
 from typing import Literal
 
-from pydantic import AliasChoices, Field
+from pydantic import AliasChoices, Field, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -38,6 +40,29 @@ class Settings(BaseSettings):
         description="Optional custom base URL for OpenAI-compatible endpoints (e.g., LiteLLM)",
     )
 
+    @field_validator("allowed_cors", mode="before")
+    def _deserialize_allowed_cors(cls, value: object) -> object:  # noqa: D401, N805
+        """Accept JSON arrays or comma-delimited strings for CORS origins."""
+
+        if not isinstance(value, str):
+            return value
+
+        stripped = value.strip().strip("'")
+        if not stripped:
+            return []
+
+        try:
+            parsed = json.loads(stripped)
+        except json.JSONDecodeError:
+            return [item.strip() for item in stripped.split(",") if item.strip()]
+
+        if isinstance(parsed, str):
+            return [parsed.strip()]
+        if isinstance(parsed, list):
+            return [str(item).strip() for item in parsed if str(item).strip()]
+
+        raise TypeError("allowed_cors must be a list of origins or a single origin string")
+
 
 @lru_cache(maxsize=1)
 def get_settings() -> Settings:
@@ -46,6 +71,5 @@ def get_settings() -> Settings:
     settings = Settings()
     settings.temp_dir.mkdir(parents=True, exist_ok=True)
     return settings
-
 
 __all__ = ["Settings", "get_settings"]
