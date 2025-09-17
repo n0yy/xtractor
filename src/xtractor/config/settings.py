@@ -20,6 +20,10 @@ class Settings(BaseSettings):
 
     environment: Literal["local", "dev", "prod"] = Field(default="local")
     mm_model: str = Field(default="gpt-4o-mini", description="Identifier for multimodal LLM")
+    allowed_cors: list[str] = Field(
+        default=["*"],
+        description="Origins allowed to perform CORS requests",
+    )
     summary_max_tokens: int = Field(default=600, ge=50, description="Upper bound for summary tokens")
     enable_symbol_agent: bool = Field(default=True, description="Toggle symbol agent execution")
     temp_dir: Path = Field(default=Path("./.tmp"), description="Workspace for temporary files")
